@@ -1,26 +1,26 @@
 import { Component, OnInit } from '@angular/core';
 import { products } from '../model/product.model';
 import { ProductService } from '../services/product.service';
-import { FormBuilder, FormGroup } from '@angular/forms';
 
 import { Router } from '@angular/router';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 
 @Component({
-  selector: 'app-products',
+  selector: 'app-product',
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.css']
 })
 export class ProductsComponent implements OnInit {
-  searchForms!:FormGroup
-  datasearch = {
+ searchForm!:FormGroup
+  data = {
     keyword:""
   }
   AllProducts!:Array<products>
-
-  constructor(private productService:ProductService, private routeh:Router, private fb:FormBuilder ){}
+  
+  constructor(private productService: ProductService, private routeh: Router, private fb:FormBuilder){}
   ngOnInit(): void {
-    this.searchForms = this.fb.group({ Keyword: this.fb.control(null) })
+   this.searchForm = this.fb.group({ keyword: this.fb.control(null)})
   this.AllProducts=this.productService.SetProducts()
   }
  Delete(data:products){
@@ -53,9 +53,9 @@ export class ProductsComponent implements OnInit {
  SetPromotion(data:any){
   this.productService.SetProm(data.id)
  }
- searchProd(){
-  let valSea =this.searchForms.value.keyword
-  this.AllProducts =this.productService.Search(valSea)
+ searchprod(){
+  const x = this.searchForm.value.keyword
+  this.AllProducts= this.productService.Search(x)
  }
 
  backHome(){
