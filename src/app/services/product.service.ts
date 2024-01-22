@@ -34,5 +34,12 @@ DataProducts!:Array<products>
    AddToNewProduct(data:products){
     this.DataProducts.push(data)
    }
-      
+   Update(id: string){
+    let product =this.DataProducts.find(p=>p.id===id)
+    return product
+   }
+   GetProductById(product: products){
+
+    this.DataProducts=this.DataProducts.map(p=>(p.id==product.id)?product:p)
+   }
 }

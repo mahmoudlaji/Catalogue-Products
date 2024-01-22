@@ -5,6 +5,7 @@ import { RegistreComponent } from './registre/registre.component';
 import { ProductsComponent } from './product/product.component';
 import { HomeComponent } from './home/home.component';
 import { NewProductComponent } from './new-product/new-product.component';
+import { UpdateComponent } from './update/update.component';
 
 const routes: Routes = [
   //{ path: '', component: HomeComponent },
@@ -13,7 +14,8 @@ const routes: Routes = [
    { path: '',component :RegistreComponent  },
    { path: 'products', component: ProductsComponent },
    { path: 'home', component:HomeComponent},
-   { path: 'newProduct', component:NewProductComponent  }
+   { path: 'newProduct', component:NewProductComponent  },
+   { path: 'updateProduct/:id', component:UpdateComponent}
 ];
 
 @NgModule({
