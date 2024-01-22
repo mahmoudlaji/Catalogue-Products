@@ -35,5 +35,7 @@ Swal.fire({
   timer: 1500
 })
 }
-
+backProduct(){
+  this.routeP.navigateByUrl("/products")
+}
 }

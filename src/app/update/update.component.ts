@@ -39,4 +39,7 @@ updateForm!:FormGroup
     // this.updateForm.GetProductById(p)
     // alert('your update is successufly')
   }
+  backProduct(){
+    this.routen.navigateByUrl("/products")
+  }
 }
