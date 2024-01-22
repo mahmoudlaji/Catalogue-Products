@@ -8,11 +8,11 @@ export class ProductService  {
 DataProducts!:Array<products>
   constructor() {
     this.DataProducts=[
-      {id: '1', name: 'TV',prix:'2000',reference:'TV1',promotion:true},
-      {id:'2' , name: 'LAPTOP',prix:'3500',reference:'LAP1',promotion:false},
-      {id: '3', name: 'PHONE',prix:'1500',reference:'PH1',promotion:true},
-      {id: '4', name: 'MODEM',prix:'100',reference:'MOD1',promotion:false}
-
+      {id: '1', name: 'TV',price:'2000',reference:'TV1',promotion:true},
+      {id:'2' , name: 'LAPTOP', price:'3500',reference:'LAP1',promotion:false},
+      {id: '3', name: 'PHONE',  price:'1500',reference:'PH1',promotion:true},
+      {id: '4', name: 'MODEM', price:'100',reference:'MOD1',promotion:false}
+ 
     ]
    }
    SetProducts(){
@@ -30,7 +30,9 @@ DataProducts!:Array<products>
    Search(data:any){
    let product =this.DataProducts.filter(p=>p.name.includes(data))
    return product
-    console.log('search')
    }  
+   AddToNewProduct(data:products){
+    this.DataProducts.push(data)
+   }
       
 }
