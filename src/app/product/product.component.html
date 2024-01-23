@@ -13,12 +13,12 @@
      </div> -->
 
 
-        <div class="card">
-            <form [formGroup]="searchForms" class="d-flex" role="search" (ngSubmit)="searchProd()">
+
+            <form [formGroup]="searchForm" class="d-flex" (ngSubmit)="searchprod()" >
                 <input class="form-control" name="keyword" placeholder="Search" formControlName="keyword">
                 <button class="btn btn-outline-primary" type="submit">Search</button>
             </form>
-        </div>
+       
         <div class="card">
             <div class="card-header" style="text-align: center;"><strong>Products Lists Table<i
                         class="bi bi-archive"></i></strong></div>
