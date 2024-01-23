@@ -27,7 +27,7 @@ DataProducts!:Array<products>
       if (product){
         product.promotion= !product.promotion}}
 
-   Search(data:string){
+   Search(data:any){
    let product =this.DataProducts.filter(p=>p.name.includes(data))
    return product
     console.log('search')
