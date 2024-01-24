@@ -13,6 +13,7 @@ import { UpdateComponent } from './update/update.component';
 import { NewProductComponent } from './new-product/new-product.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DataUsersComponent } from './data-users/data-users.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { DataUsersComponent } from './data-users/data-users.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
