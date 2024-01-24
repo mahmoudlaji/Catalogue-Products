@@ -1,1 +1,44 @@
-<p>data-users works!</p>
+<body>
+
+
+    <div class="container mt-10">
+
+       
+
+
+          
+        <div class="card">
+            <div class="card-header" style="text-align: center;"><strong>Products Lists Table<i
+                        class="bi bi-archive"></i></strong></div>
+            <div class="card-body ">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Username</th>
+                            <th>@Mail</th>
+                            <th>Adress</th>
+                            <th>Phone</th>
+        
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let user of usersData">
+                            <td>{{user.id}}</td>
+                            <td>{{user.name}}</td>
+                            <td>{{user.username}}</td>
+                            <td>{{user.email}}</td>
+                            <td>{{user.address.city}}</td>
+                            <td>{{user.phone}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+               
+            </div> 
+            <button class="btn btn-primary" type="button" routerLink="/home">Back Home</button>
+        </div>
+    </div>
+
+
+</body>
