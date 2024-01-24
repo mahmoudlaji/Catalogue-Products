@@ -1,22 +1,27 @@
-<div class="login-container" >
-    <!-- alerte notification to login -->
-    <div class="alert alert-success" role="alert" *ngIf="alert" >
-     <strong>Please log in with your account. If you don't have an account, please register first</strong> 
+<body>
+
+
+    <div class="login-container">
+        <!-- alerte notification to login -->
+        <div class="alert alert-success" role="alert" *ngIf="alert">
+            <strong>Please log in with your account. If you don't have an account, please register first</strong>
+        </div>
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" [(ngModel)]="loginData.email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" [(ngModel)]="loginData.password" required>
+            </div>
+
+            <div style="text-align: center;">
+                <button [disabled]="!loginData.email||!loginData.password" class="buttonLo m-3 "
+                    (click)="onSubmit()">Login</button>
+                <button class="buttonR" routerLink="/">Register</button>
+            </div>
+        </form>
     </div>
-      <h2>Login</h2>
-      <form id="loginForm">
-          <div class="form-group">
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" [(ngModel)]="loginData.email" required>
-          </div>
-          <div class="form-group">
-              <label for="password">Password:</label>
-              <input  type="password" id="password" name="password" [(ngModel)]="loginData.password" required>
-          </div>
-        
-          <div style="text-align: center;">
-              <button [disabled]="!loginData.email||!loginData.password" class="buttonLo m-3 " (click)="onSubmit()" >Login</button>
-              <button class="buttonR"  routerLink="/">Register</button>
-          </div>
-      </form>
-  </div>
+</body>
