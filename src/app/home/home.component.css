@@ -1,5 +1,16 @@
-*{padding: 0; margin: 0; box-sizing: border-box;}
-body{height: 900px;}
+/* *{padding: 0; margin: 0; box-sizing: border-box;} */
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	
+  }
+  
 header {
 	background: url('https://images.yourstory.com/cs/1/6c0e8ed06e3b11e9aa8461568b4ab999/Untitleddesign40-1595941377684.png?w=1152&fm=auto&ar=2:1&mode=crop&crop=faces');
 	text-align: center;
