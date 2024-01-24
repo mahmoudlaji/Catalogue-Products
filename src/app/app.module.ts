@@ -12,6 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { UpdateComponent } from './update/update.component';
 import { NewProductComponent } from './new-product/new-product.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DataUsersComponent } from './data-users/data-users.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HeaderComponent,
     FooterComponent,
     UpdateComponent,
-    NewProductComponent
+    NewProductComponent,
+    DataUsersComponent
   ],
   imports: [
     BrowserModule,
