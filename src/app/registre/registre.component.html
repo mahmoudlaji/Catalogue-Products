@@ -1,28 +1,28 @@
-<div class="login-container">
-    <!-- <div class="card-header">
-        <h4>Login</h4>
-      </div> -->
-    <h2> Add_Users</h2>
-    <form id="loginForm">
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required [(ngModel)]="regUser.email">
-        </div>
-        <div class="form-group">
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required [(ngModel)]="regUser.password">
-        </div>
-        <div class="form-group">
-            <select class="form-select" name="role" [(ngModel)]="regUser.role">
-                <option>Admin</option>
-                <option>User</option>
+<body>
+    <div class="login-container">
+       
+        <h2> Add_Users</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required [(ngModel)]="regUser.email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required [(ngModel)]="regUser.password">
+            </div>
+            <div class="form-group">
+                <select class="form-select" name="role" [(ngModel)]="regUser.role">
+                    <option>Admin</option>
+                    <option>User</option>
 
-            </select>
-        </div>
-        <div style="text-align: center;">
-          
-            <button  class="buttonLo m-3 " routerLink="login" >Login</button>
-            <button  class="buttonR" (click)="saveUser()">New User</button>
-        </div>
-    </form>
-</div>
+                </select>
+            </div>
+            <div style="text-align: center;">
+
+                <button class="buttonLo m-3 " routerLink="/login">Login</button>
+                <button class="buttonR" (click)="saveUser()">New User</button>
+            </div>
+        </form>
+    </div>
+</body>

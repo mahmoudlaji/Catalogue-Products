@@ -12,9 +12,9 @@ const routes: Routes = [
   //{ path: '', component: HomeComponent },
    
    { path: 'login',component :LoginComponent  },
-   { path: '',component :RegistreComponent  },
+   { path: 'registre',component :RegistreComponent  },
    { path: 'products', component: ProductsComponent },
-   { path: 'home', component:HomeComponent},
+   { path: '', component:HomeComponent},
    { path: 'newProduct', component:NewProductComponent  },
    { path: 'updateProduct/:id', component:UpdateComponent},
    { path: 'dataUsers' , component:DataUsersComponent}

@@ -11,9 +11,12 @@
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 20px;
+    border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
     height: 100vh;
     animation: bg 3s infinite;
     @keyframes bg {
@@ -22,3 +25,4 @@
     background-image: url("https://img.reintech.io/variants/ocw8s4nm4ymatbm2gjdys2pni1h5/e7b4ce09c703210ab8f75b017c7eaf0951c5a95b737ee8120602845c1c1d944b");
   
   }
+  

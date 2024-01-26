@@ -1,6 +1,5 @@
 <body>
 
-
     <div class="login-container">
         <!-- alerte notification to login -->
         <div class="alert alert-success" role="alert" *ngIf="alert">
@@ -20,7 +19,7 @@
             <div style="text-align: center;">
                 <button [disabled]="!loginData.email||!loginData.password" class="buttonLo m-3 "
                     (click)="onSubmit()">Login</button>
-                <button class="buttonR" routerLink="/">Register</button>
+                <button class="buttonR" routerLink="/registre">Register</button>
             </div>
         </form>
     </div>
