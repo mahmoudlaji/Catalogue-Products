@@ -3,7 +3,7 @@ import { products } from '../model/product.model';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ProductService } from '../services/product.service';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import Swal from 'sweetalert2';
+
 
 @Component({
   selector: 'app-update',
@@ -33,11 +33,12 @@ updateForm!:FormGroup
   setUpdate(){
     let p=this.updateForm.value
     this.serviceProduct.GetProductById(p)
-    
-    Swal.fire("your update is successufly!");
+    alert('your update is successufly')
     this.routen.navigateByUrl("/products")
-    // this.updateForm.GetProductById(p)
-    // alert('your update is successufly')
+    // Swal.fire("your update is successufly!");
+    // this.routen.navigateByUrl("/products")
+    
+   
   }
   backProduct(){
     this.routen.navigateByUrl("/products")
