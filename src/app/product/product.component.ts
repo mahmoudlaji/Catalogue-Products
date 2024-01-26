@@ -4,8 +4,6 @@ import { ProductService } from '../services/product.service';
 
 import { Router } from '@angular/router';
 
-import Swal from 'sweetalert2';
-
 import { FormBuilder, FormGroup } from '@angular/forms';
 
 
