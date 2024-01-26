@@ -63,7 +63,7 @@ export class ProductsComponent implements OnInit {
  }
 
  backHome(){
-this.routeh.navigateByUrl("/home")
+this.routeh.navigateByUrl("/")
  }
  goToUpdate(p:products){
   this.routeh.navigateByUrl('updateProduct/'+ p.id)
